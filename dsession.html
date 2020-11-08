@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubt Session</title>
+</head>
+<style>
+    body{
+        background-image: url("3.jpg");
+    }
+    .intro{
+        border: 4px solid white;
+        color: seashell;
+        height: 200px;
+        text-align: center;
+        font-size: 100px;
+        
+    }
+    .a1{
+        padding-top: 15px;
+    }
+    #img1{
+        float: left;
+        height: 200px;
+        width: 200px;
+    }
+    #img2{
+        float: right;
+        height: 80px;
+        width: 80px;
+        
+    }
+    #bt1{
+        float: right;
+        
+    }
+</style>
+<body>
+    <div class="intro">
+        <img src="1.jpg" id="img1">
+        <div class="a1">Welcome to PY_Lords
+        <button id="bt1"><a href="./navigation.html"> <img src="2.png" id="img2"></a></button>
+    </div>
+    <!-- Server -->
+    <!-- <%import socket
+    import sys
+    import time
+    
+    ## end of imports ###
+    
+    ### init ###
+    
+    s = socket.socket()
+    host = socket.gethostname()
+    print(" server will start on host : ", host)
+    port = 8080
+    s.bind((host,port))
+    print("")
+    print(" Server done binding to host and port successfully")
+    print("")
+    print("Server is waiting for incoming connections")
+    print("")
+    s.listen(1)
+    conn, addr = s.accept()
+    print(addr, " Has connected to the server and is now online ...")
+    print("")
+    while 1:
+                message = input(str(">> "))
+                message = message.encode()
+                conn.send(message)
+                print("message has been sent...")
+                print("")
+                incoming_message = conn.recv(1024)
+                incoming_message = incoming_message.decode()
+                print(" Client : ", incoming_message)
+                print("")%>
+    <!--client-->            
+    <!-- <%import socket
+    import sys
+    import time
+    
+    s = socket.socket()
+    host = input(str("Please enter the hostname of the server : "))
+    port = 8080
+    s.connect((host,port))
+    print(" Connected to chat server")
+    while 1:
+                incoming_message = s.recv(1024)
+                incoming_message = incoming_message.decode()
+                print(" Server : ", incoming_message)
+                print("")
+                message = input(str(">> "))
+                message = message.encode()
+                s.send(message)
+                print("message has been sent...")
+                print("")%> -->
+</body>
+</html>
